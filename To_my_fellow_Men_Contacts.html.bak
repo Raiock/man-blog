@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<?php
+$efname = $elname= $ereason = $email = $emessage ="";
+$fname = $lname = $reason = $mail = $message ="";
+$cfname = $clname = $creason = $cmail = $cmessage = false;
+$perso = "hugoheintz@gmail.com";
+$sender = "From ".$mail;
+$header = $fname." ".$lname."sent you an E-mail about ".$reason.\n\n.$message;
+
+function test ($input) {
+	$input = trim($input);
+	$input = stripslashes($input);
+	$input = htmlspecialchars($input);
+	}
+
+
+if (isset($_POST["submit"]) {
+	if (empty($_POST["fname"])) {
+		$efname = "First name is required";
+		$cfname = false;
+	}
+	else {
+		$fname=test($_POST["fname"]);
+		if (!preg_match("/^[a-zA-Z-']*$:",$fname)) {
+			$efname = "Invalid name format, please use only letters and spaces";
+			$cfname = false;
+			}
+		else{$cfname = true;}
+	}
+	
+	if (empty($_POST["lname"])) {
+		$elname = "Last name is required";
+		$clname = false
+	}
+	else {
+		$lname=test($_POST["lname"]);
+		if (!preg_match("/^[a-zA-Z-']*$:",$lname)) {
+			$elname = "Invalid name format, please use only letters and spaces";
+			$lname = false;
+			}
+		else{$clname = true;}
+	}
+	
+	if (empty($_POST["mail"])) {
+		$email = "E-mail adress is required";
+		$cmail = false;
+	}
+	else {
+		$mail=test($_POST["mail"]);
+		if (!filter_var($mail,FILTER_VALIDATE_EMAIL)) {
+			$email = "Invalid E-mail adress format";
+			$cmail = false;
+			}
+		else{$cmail = true;}
+	}
+	
+	if (empty($_POST["reason"])) {
+		$ereason = "Please choose a reason to your demand";
+		$creason = false;
+	}
+	else {
+		$reason=test($_POST["reason"]);
+		$creason = true;
+	}
+	
+	if (empty($_POST["message"])) {
+		$emessage = "Please specify your demand";
+		$cmessage = false;
+	}
+	else {
+		$message=test($_POST["mail"]);
+		$cmessage = true;
+	}
+	
+	if $cfname == true AND $clname == true AND $creason == true AND $cmail == true AND $cmessage == true {
+	mail($perso,$reason,$header,$sender);
+	header("Location: index.php?mailsend");
+	}
+}
+
+?>
+<meta charset="utf-8">
+<link rel="stylesheet"href="css/bootstrap.css">
+<script src="js/bootstrap.js"></script>
+<style>
+
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+.iclickable {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;     
+  z-index: 1;
+  display:inline-block;
+  }
+.prod{text-decoration:none;color:black;}
+.prod:hover{text-decoration:none;color:black;}
+
+input {border-radius:10px;padding:5px;}
+textarea{border-radius:10px;padding:5px;}
+select{border-radius:10px;color:white;background-color:black;padding:5px;}
+
+body{font-family:Tahoma,Verdana, sans-serif;font-size:18px;}
+
+
+.logo {background-color:rgb(85, 107, 47);}
+
+.brand{font-size:44px;color:white;text-align:center;}
+
+.navbar{width:auto; background-color:black;}
+
+.nav{margin:auto;}
+
+.nav-link {color:white;font-weight:bold;border:2px;width:auto;}
+
+.nav-link:hover{color:grey;}
+
+.nav-link:active{color:blue;}
+
+.contact{padding:5% 5% 5% 10% ;}
+.welcome{font-weight:bold;font-size:3vw;}
+
+
+.footer {background-color:rgb(85, 107, 47);margin-right:0%}
+.footerc {color:white;}
+.footerd {padding:5%;}
+
+.info{width:80%;transition: width 1s ease;border:1px solid rgba(50,50,50,0.6);outline:none;}
+.info:focus{width:50%;border:2px solid black}
+.infot{width:60%;height:50%;transition: width 1s ease,height 1s ease;resize:none;border:1px solid rgba(50,50,50,0.6);outline:none;}
+.infot:focus{width:80%;height:70%;border: 2px solid black}
+
+.error {color:red;}
+
+h1.footerc {color:white;font-weight:bold;font-size:200%;}
+
+.finfo{text-decoration:none;color:white;}
+.finfo:hover{text-decoration:none;color:rgb(30,30,30)}
+.finfo:active{{text-decoration:none;color:rgb(80,80,80)}
+
+</style>
+</head>
+
+<body class="fade-in">
+<div class="container">
+	<div class="row">
+		<div class="col">
+		</div>
+
+		<div class="logo col">
+		<a class="prod" href="To_my_fellow_Men.html" target="_self">
+			<span class="iclickable"><p class="brand">Website_name</p>
+			</span></a>
+		</div>
+
+		<div class="col">
+		</div>
+	</div>
+</div>
+
+<nav class="navbar">
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men.html" target="_self">ACCEUIL</a></li>
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Mission.html" target="_self">MISSION</a></li>
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Products.html" target="_self">PRODUCTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Partners.html" target="_self">PARTNERS</a></li>
+		<li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Contacts.html" target="_self">CONTACT</a></li>
+    </ul>
+</nav>
+
+<div style="width:100%;background-color:red;font-weight:bold;text-align:center;padding:2%;color:white;position:sticky;top:0px;z-index:1;"><h2>Work in progress website, content coming soon !</h2></div>
+
+<div class="contact">
+	<h1 class="welcome">Contact form</h1>
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+		<label for "fname">First Name :<span class="error">*<?php echo $efname;?></span></label><br>
+		<input type="text" name="fname" class="info" placeholder="Zizinger"><br><br>
+	
+		<label for "lname">Last Name :<span class="error">*<?php echo $elname;?></span></label><br>
+		<input type="text" name="lname" class="info" placeholder="Martin"><br><br>
+	
+		<label for "mail">E-mail adress :<span class="error">*<?php echo $email;?></span></label><br>
+		<input type="text" name="mail" class="info" placeholder="Martin@mail.com"><br><br>
+	
+		<label for "reason">Object of the message :<span class="error">*<?php echo $ereason;?></span></label><br>
+		<select name="reason">
+			<option value="bug">report a bug</option>
+			<option value="customer">satisfaction issue</option>
+			<option value="money">about payment</option>
+			<option value="info">Information request</option>
+			<option value="other">Other</option>
+		</select>
+		<br>
+		<br>
+	
+	<textarea name="message" class="infot" placeholder="enter message"></textarea><span class="error">*<?php echo $emessage;?></span>
+	<br>
+	<br>
+	<input type="submit" name="submit" value="Submit" style="border-radius:10px;color:white;background-color:black;padding:10px;font-size:22px;">
+	</form>
+		
+</div>
+
+<div class="row footer">
+
+	<div class="col-md footerd">
+		<h1 class ="footerc">Support</h1>
+		<ul>
+			<li class="footerc">FAQ</li>
+			<li class="footerc">Bug report</li>
+			<li class="footerc">Customer service</li>
+		</ul>
+	</div>
+
+	<div class="col-md footerd">
+		<h1 class ="footerc">Machins techniques</h1>
+		<ul>
+			<li class="footerc">Certificat du site</li>
+			<li class="footerc">Numéro de SIRET</li>
+		</ul>
+	</div>
+	
+	<div class="col-md footerd">
+		<h1 class ="footerc">Truc random pour voir si 3 col marchent</h1>
+		<ul>
+			<li class="footerc">Moi</li>
+			<li class="footerc">J'aime</li>
+			<li class="footerc">Les hérissons</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet"href="css/bootstrap.css">
+<script src="js/bootstrap.js"></script>
+<meta charset="utf-8">
+<style>
+
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+.iclickable {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;     
+  z-index: 1;
+  display:inline-block;
+  }
+.prod{text-decoration:none;color:black;}
+.prod:hover{text-decoration:none;color:black;}
+
+body{font-family:Tahoma,Verdana, sans-serif;}
+
+
+.logo {background-color:rgb(85, 107, 47);}
+
+.brand{font-size:44px;color:white;text-align:center;}
+
+.navbar{width:auto; background-color:black;}
+
+.nav{margin:auto;}
+
+.nav-link {color:white;font-weight:bold;border:2px;width:auto;}
+
+.nav-link:hover{color:grey;}
+
+.nav-link:active{color:blue;}
+
+.present{padding:5% 20%;}
+.welcome{font-weight:bold; font-size:300%;}
+.presentc{padding: 5% 0%;}
+.presentt{}
+.subtitles{font-weight:bold; font-size:150%;}
+
+.footer {background-color:rgb(85, 107, 47);margin-right:0%}
+.footerc {color:white;}
+.footerd {padding:5%}
+
+h1.footerc {color:white;font-size:200%;font-weight:bold;}
+</style>
+</head>
+
+<body class="fade-in">
+<div class="container">
+	<div class="row">
+		<div class="col">
+		</div>
+
+		<div class="logo col">
+		<a class="prod" href="To_my_fellow_Men.html" target="_self">
+			<span class="iclickable"><p class="brand">Website_name<p>
+			</span></a>
+		</div>
+
+		<div class="col">
+		</div>
+	</div>
+</div>
+
+<nav class="navbar">
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men.html" target="_self">ACCEUIL</a></li>
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Mission.html" target="_self">MISSION</a></li>
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Products.html" target="_self">PRODUCTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Partners.html" target="_self">PARTNERS</a></li>
+		<li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Contacts.html" target="_self">CONTACT</a></li>
+    </ul>
+</nav>
+
+<div style="width:100%;background-color:red;font-weight:bold;text-align:center;padding:2%;color:white;position:sticky;top:0px;z-index:1;"><h2>Work in progress website, content coming soon !</h2></div>
+
+<div class="present">
+	<h1 class="welcome">Welcome To My Fellow Men community</h1>
+	<div class="presentc">
+		<p class="presentt">
+			Seeking to improve your physique, personality, self-esteem ? Good news on our website you will find articles, tutorials, products and companions to help you build your journey toward your personal success and the one of your family.<br>
+			<br>
+			Have you ever tried to get into a new routine or state of mind and found yourself struggling to stick to it ? Here we know that constantly improving and building inner peace isn't as easy as subscribing to a diet programm, going to a seminar or ingesting medications and miracles pills. 
+			Our topics and products are designed to be easily implemented in the infinity of routine that a man can have, associated with our ever growing community you will be certain that you won't make this journey alone but accompagned by new valuable friends.
+		</p>
+		<h2 class="subtitles">Origin of this project</h2>
+			<p class="presentt">
+			</p>
+		<h2 class="subtitles">The man behind the idea</h2>
+			<p class="presentt">
+			</p>
+	</div>
+</div>
+
+<div class="row footer">
+
+	<div class="col-md footerd">
+		<h1 class ="footerc">Support</h1>
+		<ul>
+			<li class="footerc">FAQ</li>
+			<li class="footerc">Bug report</li>
+			<li class="footerc">Customer service</li>
+		</ul>
+	</div>
+
+	<div class="col-md footerd">
+		<h1 class ="footerc">Machins techniques</h1>
+		<ul>
+			<li class="footerc">Certificat du site</li>
+			<li class="footerc">Numéro de SIRET</li>
+		</ul>
+	</div>
+	
+	<div class="col-md footerd">
+		<h1 class ="footerc">Truc random pour voir si 3 col marchent</h1>
+		<ul>
+			<li class="footerc">Moi</li>
+			<li class="footerc">J'aime</li>
+			<li class="footerc">Les hérissons</li>
+		</ul>
+	</div>
+</div>
+
+</body>
+
+</html>
