@@ -9,11 +9,11 @@
 <style>
 
 .fade-in {
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
 }
 
 
@@ -126,7 +126,7 @@ h1.footerc {color:white;font-size:200%;font-weight:bold;}
 
 <nav class="navbar">
     <ul class="nav">
-		<li class="nav-item"><a class="nav-link" href="To_my_fellow_Men.html" target="_self">ACCEUIL</a></li>
+		<li class="nav-item"><a class="nav-link" href="index.html" target="_self">ACCEUIL</a></li>
         <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Mission.html" target="_self">MISSION</a></li>
         <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Products.html" target="_self">PRODUCTS</a></li>
         <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Partners.html" target="_self">PARTNERS</a></li>

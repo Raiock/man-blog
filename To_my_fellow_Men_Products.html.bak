@@ -146,7 +146,7 @@ h1.footerc {color:white;font-size:200%;font-weight:bold;}
 
 <nav class="navbar">
     <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men.html" target="_self">ACCEUIL</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html" target="_self">ACCEUIL</a></li>
         <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Mission.html" target="_self">MISSION</a></li>
         <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Products.html" target="_self">PRODUCTS</a></li>
         <li class="nav-item"><a class="nav-link" href="To_my_fellow_Men_Partners.html" target="_self">PARTNERS</a></li>
@@ -159,17 +159,17 @@ h1.footerc {color:white;font-size:200%;font-weight:bold;}
 <div class="prodd row">
 	<h3 style="margin:1%;">Categories :</h3>
 	
-	<div class="prodl col-md"><a class="prod" href=""><span class="clickable">Books</span></a></div>
-	<div class="prodl col-md"><a class="prod" href=""><span class="clickable">E-books</span></a></div>
-	<div class="prodl col-md"><a class="prod" href=""><span class="clickable">Programms</span></a></div>
-	<div class="prodl col-md"><a class="prod" href=""><span class="clickable">Supplements</span></a></div>
+	<div class="prodl col-md"><a class="prod" href="To_my_fellow_Men_cs.html"><span class="clickable">Books</span></a></div>
+	<div class="prodl col-md"><a class="prod" href="To_my_fellow_Men_cs.html"><span class="clickable">E-books</span></a></div>
+	<div class="prodl col-md"><a class="prod" href="To_my_fellow_Men_cs.html"><span class="clickable">Programms</span></a></div>
+	<div class="prodl col-md"><a class="prod" href="To_my_fellow_Men_cs.html"><span class="clickable">Supplements</span></a></div>
 
 
 <div class="photo row">
 	<div class="col-md pcol"><a class="prod" href="fiche_produit.html"><span class="iclickable"><img class="iphoto"src=""><h4 class="hphoto">Livre 1</h4><p class="tphoto">Comment améliorer quelque chose et gagner en je sais pas quoi ? Jean-Michel vous explique tout dans ce livre</p><p class="price">17,99€</p></span></a></div>
-	<div class="col-md pcol"><a class="prod" href=""><span class="iclickable"><img class="iphoto"src=""><h4 class="hphoto">Livre 2</h4><p class="tphoto">Nouvelle édition de robrto</p><p class="price">21,99€</p></span></a></div>
-	<div class="col-md pcol"><a class="prod" href=""><span class="iclickable"><img class="iphoto"src=""><h4 class="hphoto">Supplément x</h4><p class="tphoto">Whey super protéiné</p><p class="price">34,99€</p></span></a></div>
-	<div class="col-md pcol"><a class="prod" href=""><span class="iclickable"><img class="iphoto"src=""><h4 class="hphoto">Supplément Y</h4><p class="tphoto">Graines de fruits du démon</p><p class="price">25,99€</p></span></a></div>
+	<div class="col-md pcol"><a class="prod" href="To_my_fellow_Men_cs.html"><span class="iclickable"><img class="iphoto"src=""><h4 class="hphoto">Livre 2</h4><p class="tphoto">Nouvelle édition de robrto</p><p class="price">21,99€</p></span></a></div>
+	<div class="col-md pcol"><a class="prod" href="To_my_fellow_Men_cs.html"><span class="iclickable"><img class="iphoto"src=""><h4 class="hphoto">Supplément x</h4><p class="tphoto">Whey super protéiné</p><p class="price">34,99€</p></span></a></div>
+	<div class="col-md pcol"><a class="prod" href="To_my_fellow_Men_cs.html"><span class="iclickable"><img class="iphoto"src=""><h4 class="hphoto">Supplément Y</h4><p class="tphoto">Graines de fruits du démon</p><p class="price">25,99€</p></span></a></div>
 </div>
 </div>
 <div class="row footer">
